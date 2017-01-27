@@ -1,7 +1,7 @@
 package adventuregame.characters.npcs;
 
 import adventuregame.characters.GameCharacter;
-import adventuregame.characters.Profession;
+import adventuregame.characters.professions.Profession;
 import adventuregame.items.Item;
 import java.util.List;
 

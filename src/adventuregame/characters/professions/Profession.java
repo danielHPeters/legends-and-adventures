@@ -1,4 +1,4 @@
-package adventuregame.characters;
+package adventuregame.characters.professions;
 
 /**
  *

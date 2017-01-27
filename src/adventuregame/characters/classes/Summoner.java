@@ -1,4 +1,4 @@
-package interfaces;
+package adventuregame.characters.classes;
 
 /**
  *

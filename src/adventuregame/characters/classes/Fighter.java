@@ -1,10 +1,10 @@
-package interfaces;
+package adventuregame.characters.classes;
 
 /**
  *
  * @author d.peters
  */
-public interface Fightable {
+public interface Fighter {
     
     /**
      * 

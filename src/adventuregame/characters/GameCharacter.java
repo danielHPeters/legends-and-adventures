@@ -9,7 +9,15 @@ import java.util.List;
  */
 public abstract class GameCharacter {
 
-    protected String name, gender;
+    /**
+     * Character name
+     */
+    protected String name;
+    
+    /**
+     * Gender of the character
+     */
+    protected String  gender;
 
     /**
      * Player Statslist
