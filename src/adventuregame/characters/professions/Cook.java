@@ -5,8 +5,6 @@
  */
 package adventuregame.characters.professions;
 
-import adventuregame.characters.professions.Profession;
-
 /**
  *
  * @author d.peters
