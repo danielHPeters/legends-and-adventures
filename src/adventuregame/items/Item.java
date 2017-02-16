@@ -8,15 +8,30 @@ import java.util.List;
  */
 public class Item {
 
+    /**
+     * 
+     */
     private String description, name;
 
+    /**
+     * 
+     */
     private List<String> properties;
 
+    /**
+     * 
+     * @param name
+     * @param description 
+     */
     public Item(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getName() {
         return this.name;
     }
