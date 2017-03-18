@@ -10,6 +10,8 @@ import java.util.List;
  * @author Daniel
  */
 public class Npc extends GameCharacter {
+    
+    private boolean hostile;
 
     /**
      *
@@ -30,6 +32,7 @@ public class Npc extends GameCharacter {
         this.gender = gender;
         this.inventory = inventory;
         this.profession = profession;
+        this.hostile = false;
 
     }
     
