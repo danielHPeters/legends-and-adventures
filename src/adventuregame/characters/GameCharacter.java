@@ -1,7 +1,10 @@
 package adventuregame.characters;
 
+import adventuregame.characters.enums.EStat;
+import adventuregame.characters.stats.Stat;
 import adventuregame.items.Item;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -22,7 +25,7 @@ public abstract class GameCharacter {
     /**
      * Player Statslist
      */
-    protected List<Integer> Stats;
+    protected Map<EStat, Stat> stats;
 
     /**
      * Inventory of the Player
@@ -49,8 +52,12 @@ public abstract class GameCharacter {
      *
      * @return
      */
-    public List<Integer> getStats() {
-        return Stats;
+    public Map<EStat, Stat> getStats() {
+        return stats;
+    }
+    
+    public void setStats(Map<EStat, Stat> stats){
+        this.stats = stats;
     }
 
     /**
