@@ -1,5 +1,6 @@
 package adventuregame;
 
+import adventuregame.configuration.ConfigFileHandler;
 import java.awt.BorderLayout;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
