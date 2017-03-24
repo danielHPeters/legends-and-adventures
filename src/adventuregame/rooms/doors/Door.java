@@ -1,11 +1,13 @@
 package adventuregame.rooms.doors;
 
-import adventuregame.rooms.LockableObject;
+import adventuregame.rooms.ILockable;
 
 /**
  *
  * @author Daniel
  */
-public class Door extends LockableObject {
+public class Door {
+    
+    private ILockable lock;
     
 }
