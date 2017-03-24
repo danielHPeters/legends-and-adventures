@@ -9,10 +9,22 @@ package adventuregame.items;
  *
  * @author Daniel
  */
-public class GameKey extends Item{
-    
-    public GameKey(String name, String description) {
+public class GameKey extends Item {
+
+    /**
+     * Specify for which object the key is used for
+     */
+    private String keyId;
+
+    /**
+     *
+     * @param name
+     * @param description
+     * @param keyId
+     */
+    public GameKey(String name, String description, String keyId) {
         super(name, description);
+        this.keyId = keyId;
     }
-    
+
 }

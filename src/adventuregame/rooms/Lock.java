@@ -13,6 +13,19 @@ public class Lock implements ILockable {
      *
      */
     private boolean locked;
+    
+    /**
+     * 
+     */
+    private String keyId;
+    
+    /**
+     * 
+     * @param keyId 
+     */
+    public Lock(String keyId){
+        this.keyId = keyId;
+    }
 
     @Override
     public boolean isLocked() {
