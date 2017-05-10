@@ -3,6 +3,7 @@ package adventuregame.characters;
 import adventuregame.characters.enums.EStat;
 import adventuregame.characters.stats.Stat;
 import adventuregame.items.Item;
+import adventuregame.magic.Effect;
 import java.util.List;
 import java.util.Map;
 
@@ -31,6 +32,8 @@ public abstract class GameCharacter {
      * Inventory of the Player
      */
     protected List<Item> inventory;
+    
+    protected List<Effect> effects;
 
     /**
      *
@@ -66,6 +69,10 @@ public abstract class GameCharacter {
      */
     public List<Item> getInventory() {
         return inventory;
+    }
+
+    public List<Effect> getEffects() {
+        return effects;
     }
 
 }

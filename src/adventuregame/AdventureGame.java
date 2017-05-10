@@ -1,11 +1,9 @@
 package adventuregame;
 
-import adventuregame.configuration.ConfigFileHandler;
 import java.awt.BorderLayout;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
 
 /**
  *
@@ -59,18 +57,6 @@ public class AdventureGame {
         this.window.setSize(500, 500);
         this.window.setVisible(true);
 
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-
-        AdventureGame game = new AdventureGame();
-
-        SwingUtilities.invokeLater(() -> {
-            game.initAndShowGui();
-        });
     }
 
 }
