@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Daniel
+ * @author daniel.peters
  * @version 0.1
  * @since 13.10.2016
  */
