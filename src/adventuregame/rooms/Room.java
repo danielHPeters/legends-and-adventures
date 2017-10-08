@@ -1,134 +1,79 @@
 package adventuregame.rooms;
 
 import adventuregame.items.Item;
+
 import java.util.List;
 
 /**
+ * Room with items and exits.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class Room {
+  private String name;
+  private Room north;
+  private Room east;
+  private Room south;
+  private Room west;
+  private List<Item> items;
 
-    /**
-     * 
-     */
-    private String name;
+  /**
+   * Default Constructor.
+   *
+   * @param name  Name of the room
+   * @param items Items in the room
+   */
+  public Room(String name, List<Item> items) {
+    this.name = name;
+    this.items = items;
+  }
 
-    /**
-     * 
-     */
-    private Room north, east, south, west;
+  public String getName() {
+    return name;
+  }
 
-    /**
-     * 
-     */
-    private List<Item> items;
-    
-    /**
-     * Default Constructor
-     * @param name Name of the room
-     * @param items Items in the room
-     */
-    public Room(String name, List<Item> items){
-        this.name = name;
-        this.items = items;
-    }
+  public Room getNorth() {
+    return north;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public String getName() {
-        return name;
-    }
+  public Room getEast() {
+    return east;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public Room getNorth() {
-        return north;
-    }
+  public Room getSouth() {
+    return south;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public Room getEast() {
-        return east;
-    }
+  public Room getWest() {
+    return west;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public Room getSouth() {
-        return south;
-    }
+  public List<Item> getItems() {
+    return items;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public Room getWest() {
-        return west;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public List<Item> getItems() {
-        return items;
-    }
+  public void setNorth(Room north) {
+    this.north = north;
+  }
 
-    /**
-     * 
-     * @param name 
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setEast(Room east) {
+    this.east = east;
+  }
 
-    /**
-     * 
-     * @param north 
-     */
-    public void setNorth(Room north) {
-        this.north = north;
-    }
+  public void setSouth(Room south) {
+    this.south = south;
+  }
 
-    /**
-     * 
-     * @param east 
-     */
-    public void setEast(Room east) {
-        this.east = east;
-    }
+  public void setWest(Room west) {
+    this.west = west;
+  }
 
-    /**
-     * 
-     * @param south 
-     */
-    public void setSouth(Room south) {
-        this.south = south;
-    }
-
-    /**
-     * 
-     * @param west 
-     */
-    public void setWest(Room west) {
-        this.west = west;
-    }
-
-    /**
-     * 
-     * @param items 
-     */
-    public void setItems(List<Item> items) {
-        this.items = items;
-    }
-    
-    
+  public void setItems(List<Item> items) {
+    this.items = items;
+  }
 }

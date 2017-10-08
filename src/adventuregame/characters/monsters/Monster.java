@@ -3,9 +3,11 @@ package adventuregame.characters.monsters;
 import adventuregame.characters.GameCharacter;
 
 /**
+ * Monster object.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
-public class Monster extends GameCharacter{
-    
+public class Monster extends GameCharacter {
+
 }

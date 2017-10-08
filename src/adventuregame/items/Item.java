@@ -3,36 +3,30 @@ package adventuregame.items;
 import java.util.List;
 
 /**
+ * Item class.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class Item {
+  private String name;
+  private String description;
+  private List<String> properties;
 
-    /**
-     * 
-     */
-    private String description, name;
+  public Item(String name, String description) {
+    this.name = name;
+    this.description = description;
+  }
 
-    /**
-     * 
-     */
-    private List<String> properties;
+  public String getName() {
+    return this.name;
+  }
 
-    /**
-     * 
-     * @param name
-     * @param description 
-     */
-    public Item(String name, String description) {
-        this.name = name;
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    /**
-     * 
-     * @return 
-     */
-    public String getName() {
-        return this.name;
-    }
+  public List<String> getProperties() {
+    return properties;
+  }
 }

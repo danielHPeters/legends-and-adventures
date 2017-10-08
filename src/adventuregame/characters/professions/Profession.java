@@ -1,13 +1,11 @@
 package adventuregame.characters.professions;
 
 /**
+ * Profession interface.
  *
- * @author d.peters
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface Profession {
-
-    /**
-     * 
-     */
-    public void doWork();
+  void doWork();
 }

@@ -1,17 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adventuregame.base.interfaces;
 
 import adventuregame.base.enums.EDirection;
 
 /**
+ * Interface for movable objects.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface IMovable {
-
-    public void move(EDirection direction);
+  void move(EDirection direction);
 }

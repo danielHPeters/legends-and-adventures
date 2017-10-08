@@ -1,12 +1,14 @@
 package adventuregame.characters.interfaces;
 
 /**
+ * Talking character interface.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface ITalker {
-    
-    public void sendMessage();
-    
-    public void receiveMessage();
+
+  void sendMessage();
+
+  void receiveMessage();
 }
