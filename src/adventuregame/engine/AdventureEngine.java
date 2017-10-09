@@ -8,5 +8,4 @@ package adventuregame.engine;
  */
 public class AdventureEngine {
 
-
 }

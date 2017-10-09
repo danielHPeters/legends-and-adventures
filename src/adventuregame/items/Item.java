@@ -13,6 +13,12 @@ public class Item {
   private String description;
   private List<String> properties;
 
+  /**
+   * Default constructor. Requires item name and description.
+   *
+   * @param name        name of the item
+   * @param description details of item
+   */
   public Item(String name, String description) {
     this.name = name;
     this.description = description;

@@ -13,7 +13,6 @@ import javafx.stage.Stage;
  * @version 1.0
  */
 public class Main extends Application {
-
   @Override
   public void start(Stage primaryStage) throws Exception {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("mainScreen.fxml"));
@@ -32,6 +31,4 @@ public class Main extends Application {
   public static void main(String[] args) {
     launch(args);
   }
-
-
 }

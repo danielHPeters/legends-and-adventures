@@ -37,5 +37,4 @@ public class MainScreenController implements Initializable {
   protected void closeApplication() {
     Platform.exit();
   }
-
 }
