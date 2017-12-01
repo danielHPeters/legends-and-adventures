@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adventuregame.rooms.cells;
 
 /**
+ * Room cell.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class Cell {
-    String type;
+  private String type;
 }

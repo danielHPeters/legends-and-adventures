@@ -1,11 +1,13 @@
 package adventuregame.physics;
 
 /**
- * @author Daniel
+ * Collision handler.
+ *
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class CollisionHandler {
+  public void resolveCollision() {
 
-    public void resolveCollision() {
-
-    }
+  }
 }

@@ -50,3 +50,9 @@ fabric.properties
 
 #KDE
 .directory
+
+#Netbeans
+/build/
+/nbproject/private/
+/dist/
+/bin/

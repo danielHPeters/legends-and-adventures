@@ -1,7 +1,10 @@
 package adventuregame.physics;
 
 /**
- * @author Daniel
+ * Physics component.
+ *
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class PhysicsComponent {
 

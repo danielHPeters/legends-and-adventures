@@ -3,14 +3,15 @@ package adventuregame.rooms;
 import adventuregame.items.Item;
 
 /**
+ * Interface for lockable objects.
  *
- * @author d.peters
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface ILockable {
+  boolean isLocked();
 
-    public boolean isLocked();
+  void lock(Item key);
 
-    public void lock(Item key);
-    
-    public void unlock(Item key);
+  void unlock(Item key);
 }

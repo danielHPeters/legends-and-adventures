@@ -3,50 +3,36 @@ package adventuregame.items;
 import java.util.List;
 
 /**
+ * Item class.
  *
- * @author daniel.peters
+ * @author Daniel Peters
+ * @version 1.0
  */
 public class Item {
+  private String name;
+  private String description;
+  private List<String> properties;
 
-	/**
-	 * Name of the item
-	 */
-	private String name;
-	
-    /**
-     * Description text of the item
-     */
-    private String description;
+  /**
+   * Default constructor. Requires item name and description.
+   *
+   * @param name        name of the item
+   * @param description details of item
+   */
+  public Item(String name, String description) {
+    this.name = name;
+    this.description = description;
+  }
 
-    /**
-     * Item Properties
-     */
-    private List<String> properties;
+  public String getName() {
+    return this.name;
+  }
 
-    /**
-     * Default constructor. Requires item name and description
-     * @param name name of the item
-     * @param description details of item
-     */
-    public Item(String name, String description) {
-        this.name = name;
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    /**
-     * Getter for item name
-     * @return item name
-     */
-    public String getName() {
-        return this.name;
-    }
-
-    /**
-     * Getter for item description
-     * @return the description
-     */
-	public String getDescription() {
-		return description;
-	}
-	
+  public List<String> getProperties() {
+    return properties;
+  }
 }

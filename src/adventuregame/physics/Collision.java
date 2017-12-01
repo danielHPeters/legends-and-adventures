@@ -1,65 +1,37 @@
 package adventuregame.physics;
 
-import adventuregame.base.interfaces.ICollidable;
+import adventuregame.base.interfaces.CollideAble;
 
 /**
  * Class Collision.
  *
  * @author Daniel Peters
+ * @version 1.0
  */
 public class Collision {
+  private CollideAble obj1;
+  private CollideAble obj2;
+  private boolean resolved;
 
-    /**
-     *
-     */
-    private ICollidable obj1;
+  public Collision(CollideAble obj1, CollideAble obj2) {
+    this.obj1 = obj1;
+    this.obj2 = obj2;
+    this.resolved = false;
+  }
 
-    /**
-     *
-     */
-    private ICollidable obj2;
+  public CollideAble getObj1() {
+    return obj1;
+  }
 
-    /**
-     *
-     */
-    private boolean resolved;
+  public CollideAble getObj2() {
+    return obj2;
+  }
 
-    /**
-     * @param obj1
-     * @param obj2
-     */
-    public Collision(ICollidable obj1, ICollidable obj2) {
-        this.obj1 = obj1;
-        this.obj2 = obj2;
-        this.resolved = false;
-    }
+  public boolean isResolved() {
+    return resolved;
+  }
 
-    /**
-     * @return
-     */
-    public ICollidable getObj1() {
-        return obj1;
-    }
-
-    /**
-     * @return
-     */
-    public ICollidable getObj2() {
-        return obj2;
-    }
-
-    /**
-     * @return
-     */
-    public boolean isResolved() {
-        return resolved;
-    }
-
-    /**
-     * @param resolved
-     */
-    public void setResolved(boolean resolved) {
-        this.resolved = resolved;
-    }
-
+  public void setResolved(boolean resolved) {
+    this.resolved = resolved;
+  }
 }

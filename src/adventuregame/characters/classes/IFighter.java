@@ -1,13 +1,11 @@
 package adventuregame.characters.classes;
 
 /**
+ * Fighter interface.
  *
- * @author d.peters
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface IFighter {
-    
-    /**
-     * 
-     */
-    public void fight();
+  void fight();
 }

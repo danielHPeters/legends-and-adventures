@@ -1,13 +1,11 @@
 package adventuregame.characters.classes;
 
 /**
+ * Summoner interface.
  *
- * @author d.peters
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface ISummoner {
-    
-    /**
-     * 
-     */
-    public void summon();
+  void summon();
 }

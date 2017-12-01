@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package adventuregame.base.interfaces;
 
 /**
+ * Interface for damageable objects.
  *
- * @author Daniel
+ * @author Daniel Peters
+ * @version 1.0
  */
 public interface IDamageable {
-
-    public void takeDamage(double damage);
+  void takeDamage(double damage);
 }
