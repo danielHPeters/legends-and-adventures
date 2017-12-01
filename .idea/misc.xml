@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <executablePath>/usr/bin/composer</executablePath>
+  </component>
+  <component name="MessDetectorProjectConfiguration">
+    <option name="selectedConfigurationId" value="DEFAULT_INTERPRETER" />
+  </component>
+  <component name="PHPCodeSnifferProjectConfiguration">
+    <option name="selectedConfigurationId" value="DEFAULT_INTERPRETER" />
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

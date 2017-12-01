@@ -28,14 +28,11 @@ import adventuregame.rooms.Room;
 import java.util.List;
 
 /**
- *
  * @author daniel
  */
 public class GameMap {
-    
+
     public List<Room> rooms;
-    
+
     public List<Player> activePlayers;
-    
-    
 }

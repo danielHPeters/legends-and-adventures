@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.JFrame;
 
 /**
- *
  * @author daniel.peters
  * @version 0.1
  * @since 13.10.2016
