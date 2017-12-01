@@ -1,6 +1,7 @@
 package adventuregame.rooms;
 
 import adventuregame.items.Item;
+import adventuregame.rooms.cells.Cell;
 import java.util.List;
 
 /**
@@ -18,6 +19,8 @@ public class Room {
      * 
      */
     private Room north, east, south, west;
+    
+    private List<Cell> cells;
 
     /**
      * 

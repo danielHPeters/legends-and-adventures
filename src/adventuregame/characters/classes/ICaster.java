@@ -9,6 +9,6 @@ package adventuregame.characters.classes;
  *
  * @author d.peters
  */
-public interface Caster {
+public interface ICaster {
     public void cast();
 }

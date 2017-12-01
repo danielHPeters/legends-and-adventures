@@ -30,7 +30,7 @@ public class AdventureGame {
     private JFrame window;
 
     /**
-     * JPanle where the painting is done on
+     * JPanel where the painting is done on
      */
     private GameSurface canvas;
 
