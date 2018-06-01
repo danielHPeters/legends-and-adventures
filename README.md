@@ -1,2 +1,2 @@
-# AdventureGame
-An adventuregame / RPG project in Java.
+# legends-and-adventures
+An adventuregame / RPG project written in Java.
