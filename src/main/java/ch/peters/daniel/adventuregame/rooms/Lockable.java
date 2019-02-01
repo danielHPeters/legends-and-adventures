@@ -5,7 +5,7 @@ import ch.peters.daniel.adventuregame.items.Item;
 /**
  * Interface for lockable objects.
  *
- * @author Daniel Peters <daniel.peters.ch@gmail.com>
+ * @author Daniel Peters
  * @version 1.0
  */
 public interface Lockable {

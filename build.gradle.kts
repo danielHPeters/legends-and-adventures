@@ -12,14 +12,22 @@ application {
   mainClassName = "${project.group}.$applicationName.App"
 }
 
+var currentOS = org.gradle.internal.os.OperatingSystem.current()!!
+var platform = when {
+  currentOS.isWindows -> "win"
+  currentOS.isLinux -> "linux"
+  currentOS.isMacOsX -> "max"
+  else -> ""
+}
+
 dependencies {
-  implementation("com.google.guava:guava:23.0")
-  implementation("com.fasterxml.jackson.core:jackson-core:2.9.5")
-  implementation("com.fasterxml.jackson.core:jackson-annotations:2.9.5")
-  implementation("com.fasterxml.jackson.core:jackson-databind:2.9.5")
-  implementation("com.jfoenix:jfoenix:9.0.6")
-  testImplementation("org.codehaus.groovy:groovy-all:2.4.15")
-  testImplementation("org.spockframework:spock-core:1.0-groovy-2.4")
+  implementation("org.openjfx:javafx-base:11:$platform")
+  implementation("org.openjfx:javafx-graphics:11:$platform")
+  implementation("org.openjfx:javafx-controls:11:$platform")
+  implementation("org.openjfx:javafx-fxml:11:$platform")
+  implementation("com.jfoenix:jfoenix:9.0.8")
+  testImplementation("org.codehaus.groovy:groovy-all:2.5.5")
+  testImplementation("org.spockframework:spock-core:1.2-groovy-2.5")
   testImplementation("junit:junit:4.12")
 }
 
@@ -30,4 +38,30 @@ repositories {
 configure<JavaPluginConvention> {
   sourceCompatibility = JavaVersion.VERSION_1_10
   targetCompatibility = JavaVersion.VERSION_1_10
+}
+
+tasks.withType<JavaCompile> {
+  doFirst {
+    options.compilerArgs = listOf(
+      "--module-path", classpath.asPath,
+      "--add-modules", "javafx.base",
+      "--add-modules", "javafx.controls",
+      "--add-modules", "javafx.fxml",
+      "--add-modules", "javafx.graphics",
+      "--add-modules", "com.jfoenix"
+    )
+  }
+}
+
+tasks.withType<JavaExec> {
+  doFirst {
+    jvmArgs = listOf(
+      "--module-path", classpath.asPath,
+      "--add-modules", "javafx.base",
+      "--add-modules", "javafx.controls",
+      "--add-modules", "javafx.fxml",
+      "--add-modules", "javafx.graphics",
+      "--add-modules", "com.jfoenix"
+    )
+  }
 }

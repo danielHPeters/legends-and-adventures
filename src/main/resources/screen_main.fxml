@@ -15,28 +15,28 @@
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass"
             xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="ch.peters.daniel.adventuregame.gui.MainScreenController">
-    <MenuBar layoutY="8.0" prefHeight="25.0" prefWidth="600.0">
-        <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Save"/>
-            <MenuItem mnemonicParsing="false" onAction="#locateFile" text="Load"/>
-            <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close"/>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Options">
-            <MenuItem mnemonicParsing="false" text="Action 1"/>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About"/>
-        </Menu>
-    </MenuBar>
-    <Text fill="#5e4c23" layoutX="225.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adventure Game">
-        <font>
-            <Font name="System Bold" size="19.0"/>
-        </font>
-    </Text>
-    <JFXTextField layoutX="100.0" layoutY="190.0" promptText="Username" labelFloat="true" styleClass="controls"/>
-    <JFXPasswordField layoutX="100.0" layoutY="230.0" promptText="Password" labelFloat="true" styleClass="controls"/>
-    <JFXButton layoutX="100.0" layoutY="270.0" text="Login" styleClass="controls"/>
-    <stylesheets>
-        <URL value="@css/main.css"/>
-    </stylesheets>
+  <MenuBar layoutY="8.0" prefHeight="25.0" prefWidth="600.0">
+    <Menu mnemonicParsing="false" text="File">
+      <MenuItem mnemonicParsing="false" text="Save"/>
+      <MenuItem mnemonicParsing="false" onAction="#locateFile" text="Load"/>
+      <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Options">
+      <MenuItem mnemonicParsing="false" text="Action 1"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+      <MenuItem mnemonicParsing="false" text="About"/>
+    </Menu>
+  </MenuBar>
+  <Text fill="#5e4c23" layoutX="225.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adventure Game">
+    <font>
+      <Font name="System Bold" size="19.0"/>
+    </font>
+  </Text>
+  <JFXTextField layoutX="100.0" layoutY="190.0" promptText="Username" labelFloat="true" styleClass="controls"/>
+  <JFXPasswordField layoutX="100.0" layoutY="230.0" promptText="Password" labelFloat="true" styleClass="controls"/>
+  <JFXButton layoutX="100.0" layoutY="270.0" text="Login" styleClass="controls"/>
+  <stylesheets>
+    <URL value="@css/main.css"/>
+  </stylesheets>
 </AnchorPane>

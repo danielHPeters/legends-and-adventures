@@ -1,4 +1,4 @@
-package adventuregame.graphics;
+package ch.peters.daniel.adventuregame.graphics;
 
 /**
  * Graphics component.

@@ -1,13 +1,14 @@
 .jfx-button {
-    -jfx-button-type: RAISED;
-    -fx-background-color: blue;
-    -fx-text-fill: white;
+  -jfx-button-type: RAISED;
+  -fx-background-color: blue;
+  -fx-text-fill: white;
 }
+
 .layout {
-    -fx-pref-height: 400.0;
-    -fx-pref-width: 640.0;
+  -fx-pref-height: 400.0;
+  -fx-pref-width: 640.0;
 }
 
 .controls {
-    -fx-pref-width: 400;
+  -fx-pref-width: 400;
 }

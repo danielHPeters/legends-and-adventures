@@ -3,7 +3,7 @@ package ch.peters.daniel.adventuregame.items;
 /**
  * Key as Item. Uses id for unique identification.
  *
- * @author Daniel Peters <daniel.peters.ch@gmail.com>
+ * @author Daniel Peters
  * @version 1.0
  */
 public class Key extends Item {

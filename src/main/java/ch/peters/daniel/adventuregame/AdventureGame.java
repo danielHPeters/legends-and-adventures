@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Game application class.
  *
- * @author Daniel Peters <daniel.peters.ch@gmail.com>
+ * @author Daniel Peters
  * @version 0.1
  * @since 13.10.2016
  */

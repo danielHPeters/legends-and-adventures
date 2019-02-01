@@ -1,4 +1,4 @@
-package adventuregame.rooms.obstacles;
+package ch.peters.daniel.adventuregame.rooms.obstacles;
 
 /**
  * Obstacle object.

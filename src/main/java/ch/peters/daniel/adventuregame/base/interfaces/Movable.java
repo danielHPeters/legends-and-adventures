@@ -5,7 +5,7 @@ import ch.peters.daniel.adventuregame.base.enums.Direction;
 /**
  * Interface for movable objects.
  *
- * @author Daniel Peters <daniel.peters.ch@gmail.com>
+ * @author Daniel Peters
  * @version 1.0
  */
 public interface Movable {
